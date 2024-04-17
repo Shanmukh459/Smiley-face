@@ -21,21 +21,27 @@ const mouthArc = arc()
   .startAngle(Math.PI/2)
   .endAngle(Math.PI * 3/2)
 
+const Eyes = () => (
+  <>
+    <circle 
+      r={eyeRadius}
+      cx={-eyeOffsetX}
+      cy={-eyeOffsetY}
+    />
+    <circle 
+      r={eyeRadius}
+      cx={eyeOffsetX}
+      cy={-eyeOffsetY}
+    />
+  </>
+)
+
 const App = () => {
   return (
     <svg width={width} height={height}>
       <g transform={`translate(${centerX}, ${centerY})`}>
-        <BackgroundCircle radius={centerY - strokeWidth/2}/>
-        <circle 
-          r={eyeRadius}
-          cx={-eyeOffsetX}
-          cy={-eyeOffsetY}
-        />
-        <circle 
-          r={eyeRadius}
-          cx={eyeOffsetX}
-          cy={-eyeOffsetY}
-        />
+        <BackgroundCircle radius={centerY - strokeWidth/2} strokeWidth={strokeWidth}/>
+        <Eyes />
         <path d={mouthArc()} />
       </g>
     </svg>
