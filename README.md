@@ -1,8 +1,10 @@
-# React + Vite
+# Smiley Face using SVG + D3
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- This is a practice project on creating Data Visualizations
+- I have used SVG and D3 to create a smiley face emoji in this project
 
-Currently, two official plugins are available:
+### Screenshot of SVG 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/Shanmukh459/Smiley-face/assets/52078988/dc37a9a5-624b-4d8b-b7a1-9cc9147df04b)
+
+Happy Coding!
