@@ -13,12 +13,12 @@ const App = () => array.map(() => (
     height={height}
     centerX = {width / 2}
     centerY = {height /2}
-    eyeOffsetX = {38}
-    eyeOffsetY = {35}
-    strokeWidth = {10}
-    eyeRadius = {13}
-    mouthWidth = {10}
-    mouthRadius = {45}
+    eyeOffsetX = {38 + Math.random()*10}
+    eyeOffsetY = {30 + Math.random()*10}
+    strokeWidth = {5 + Math.random()*5}
+    eyeRadius = {10 + Math.random()*10}
+    mouthWidth = {10 + Math.random()*10}
+    mouthRadius = {45 + Math.random()*10}
     />
   
 ))
