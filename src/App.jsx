@@ -20,16 +20,20 @@ const mouthArc = arc()
   .startAngle(Math.PI/2)
   .endAngle(Math.PI * 3/2)
 
+
+const BackgroundCircle = ({ radius }) => (
+  <circle 
+    r={radius}
+    fill="yellow"
+    stroke="black"
+    strokeWidth={strokeWidth}
+  />
+)
 const App = () => {
   return (
     <svg width={width} height={height}>
       <g transform={`translate(${centerX}, ${centerY})`}>
-        <circle 
-          r={centerY - strokeWidth/2}
-          fill="yellow"
-          stroke="black"
-          strokeWidth={strokeWidth}
-        />
+        <BackgroundCircle radius={centerY - strokeWidth/2}/>
         <circle 
           r={eyeRadius}
           cx={-eyeOffsetX}
