@@ -1,4 +1,4 @@
-# Smiley Face using SVG + D3
+# Smiley Face using SVG + D3 + React
 
 - This is a practice project on creating Data Visualizations
 - I have used SVG and D3 to create a smiley face emoji in this project
